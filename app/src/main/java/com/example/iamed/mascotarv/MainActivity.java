@@ -1,7 +1,7 @@
 package com.example.iamed.mascotarv;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
@@ -19,14 +19,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(layout.activity_main);
 
-        ListaMascotas = (RecyclerView) findViewById(id.rvMascotas);
+        ListaMascotas = (RecyclerView) findViewById(id.rvMascota);
+
         LinearLayoutManager llm = new LinearLayoutManager(this);
         llm.setOrientation(LinearLayoutManager.VERTICAL);
         ListaMascotas.setLayoutManager(llm);
         iniciarListaMascotas();
         inicializarAdaptador();
-        
-
 
     }
 
