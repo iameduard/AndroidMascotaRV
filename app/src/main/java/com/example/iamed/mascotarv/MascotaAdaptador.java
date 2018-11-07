@@ -23,7 +23,6 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
     public MascotaViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
 
         View v=LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.cardview_mascota,viewGroup,false);
-
         return new MascotaViewHolder(v);
     }
     //Asociar cada elemento de a vista con cada view...
@@ -40,7 +39,7 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
 
     @Override
     public int getItemCount() {
-        return mascotas.size;
+        return mascotas.size();
     }
 
     public class MascotaViewHolder extends RecyclerView.ViewHolder {
