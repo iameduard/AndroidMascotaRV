@@ -19,6 +19,32 @@
             android:layout_height="wrap_content"
             android:src="@drawable/perro06"/>
 
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imHuesoBlancoRV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icons8_hueso_blanco_50"
+                android:layout_gravity="left"/>
+
+            <TextView
+                android:id="@+id/tvNombreRV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/imHuesoAmarilloRV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icons8_hueso_amarillo_50"
+                android:layout_gravity="right"/>
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
     </android.support.v7.widget.LinearLayoutCompat>
 
 </android.support.v7.widget.CardView>

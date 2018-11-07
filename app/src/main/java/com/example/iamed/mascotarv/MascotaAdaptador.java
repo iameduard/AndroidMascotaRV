@@ -2,6 +2,8 @@ package com.example.iamed.mascotarv;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 
 import java.util.ArrayList;
@@ -17,7 +19,10 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
     @NonNull
     @Override
     public MascotaViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        return null;
+
+        View v=LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.cardview_mascota,viewGroup,false);
+
+        return new MascotaViewHolder(v);
     }
 
     @Override
@@ -27,9 +32,13 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
 
     @Override
     public int getItemCount() {
-        return 0;
+        return mascotas.size;
     }
 
     public class MascotaViewHolder extends RecyclerView.ViewHolder {
+        private
+        public MascotaViewHolder(View v) {
+            super();
+        }
     }
 }
