@@ -3,6 +3,7 @@ package com.example.iamed.mascotarv;
 public class Mascotas {
     String nombre;
     int rate;
+    private int foto;
 
     public Mascotas(String nombre, int rate) {
             this.nombre=nombre;
@@ -23,5 +24,13 @@ public class Mascotas {
 
     public void setRate(int rate) {
         this.rate = rate;
+    }
+
+    public int getFoto() {
+        return foto;
+    }
+
+    public void setFoto(int foto) {
+        this.foto = foto;
     }
 }

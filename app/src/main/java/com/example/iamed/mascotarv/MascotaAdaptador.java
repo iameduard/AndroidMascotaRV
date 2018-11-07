@@ -5,6 +5,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -15,7 +17,7 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
     public MascotaAdaptador(ArrayList<Mascotas> mascotas) {
         this.mascotas=mascotas;
     }
-
+    //Inflar el layout y lo pasara al viewholder para que obtenga los views..
     @NonNull
     @Override
     public MascotaViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
@@ -24,9 +26,15 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
 
         return new MascotaViewHolder(v);
     }
-
+    //Asociar cada elemento de a vista con cada view...
     @Override
     public void onBindViewHolder(@NonNull MascotaViewHolder mascotaViewHolder, int i) {
+
+        Mascotas mascota = mascotas.get(i);
+        mascotaViewHolder.imFotoRV.setImageResource(mascota.getFoto());
+        //Cssting de int a String.. OJOOOO!!!!
+        mascotaViewHolder.tvRating.setText(mascota.getRate());
+        mascotaViewHolder.tvNombreRV.setText(mascota.getNombre());
 
     }
 
@@ -36,9 +44,15 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
     }
 
     public class MascotaViewHolder extends RecyclerView.ViewHolder {
-        private
+        private ImageView imFotoRV;
+        private TextView tvNombreRV;
+        private TextView tvRating;
+
         public MascotaViewHolder(View v) {
-            super();
+            super(v);
+            imFotoRV    = (ImageView) v.findViewById(R.id.imFotoRV);
+            tvNombreRV  = (TextView)  v.findViewById(R.id.tvNombreRV);
+            tvRating    = (TextView)  v.findViewById(R.id.tvRating);
         }
     }
 }
