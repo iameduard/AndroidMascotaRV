@@ -2,4 +2,14 @@
     <string name="app_name">MascotaRV</string>
     <string name="nombre">Khan</string>
     <string name="rating">5</string>
+    <string name="nombre1">Khan</string>
+    <string name="rating1">5</string>
+    <string name="nombre2">Gufy</string>
+    <string name="rating2">4</string>
+    <string name="nombre3">Osita</string>
+    <string name="rating3">2</string>
+    <string name="nombre4">Chuchu</string>
+    <string name="rating4">4</string>
+    <string name="nombre5">Gua</string>
+    <string name="rating5">3</string>
 </resources>

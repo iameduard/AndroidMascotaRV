@@ -36,7 +36,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void iniciarListaMascotas() {
         mascotas=new ArrayList<Mascotas>();
-
+        //
+        //Verificar si hace falta pasar el rating OJOOOOO!!!!!
+        //
         mascotas.add(new Mascotas("Catty",drawable.perro01));
         mascotas.add(new Mascotas("Ronny",drawable.perro02));
         mascotas.add(new Mascotas("gufy",drawable.perro03));

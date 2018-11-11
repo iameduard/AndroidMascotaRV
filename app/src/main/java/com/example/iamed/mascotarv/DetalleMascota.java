@@ -21,7 +21,12 @@ public class DetalleMascota extends AppCompatActivity {
         String nombre=parametros.getString(getResources().getString(R.string.nombre));
         String rating=parametros.getString(getResources().getString(R.string.rating));
 
+        //Extraer desde layout activity_detalle_mascota.xml..(mostrar 5 mascotas)
         tvNombre=(TextView) findViewById(R.id.tvNombreRV);
+        tvRate=(TextView) findViewById(R.id.tvRating);
+
+        tvNombre.setText(nombre);
+        tvRate.setText(rating);
 
     }
 }

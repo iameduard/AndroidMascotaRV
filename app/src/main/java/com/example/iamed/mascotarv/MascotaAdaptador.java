@@ -15,7 +15,9 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
     private ArrayList<Mascotas> mascotas;
 
     public MascotaAdaptador(ArrayList<Mascotas> mascotas) {
+
         this.mascotas=mascotas;
+
     }
     //Inflar el layout y lo pasara al viewholder para que obtenga los views..
     @NonNull
@@ -31,7 +33,7 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
 
         Mascotas mascota = mascotas.get(i);
         mascotaViewHolder.imFotoRV.setImageResource(mascota.getFoto());
-        //Cssting de int a String.. OJOOOO!!!!
+        //Casting de int a String.. OJOOOO!!!!
         mascotaViewHolder.tvRating.setText(mascota.getRate());
         mascotaViewHolder.tvNombreRV.setText(mascota.getNombre());
 
