@@ -41,12 +41,12 @@ public class MainActivity extends AppCompatActivity {
         //
         //Verificar si hace falta pasar el rating OJOOOOO!!!!!
         //
-        mascotas.add(new Mascotas("Catty",drawable.perro01));
-        mascotas.add(new Mascotas("Ronny",drawable.perro02));
-        mascotas.add(new Mascotas("gufy",drawable.perro03));
-        mascotas.add(new Mascotas("plutoo",drawable.perro04));
-        mascotas.add(new Mascotas("layka",drawable.perro05));
-        mascotas.add(new Mascotas("Coco",drawable.perro06));
+        mascotas.add(new Mascotas(drawable.perro01,"Catty","4"));
+        mascotas.add(new Mascotas(drawable.perro02,"Ronny","5"));
+        mascotas.add(new Mascotas(drawable.perro03,"gufy","4"));
+        mascotas.add(new Mascotas(drawable.perro04,"plutoo","3"));
+        mascotas.add(new Mascotas(drawable.perro05,"layka","2"));
+        mascotas.add(new Mascotas(drawable.perro06,"Coco","5"));
 
     }
 }

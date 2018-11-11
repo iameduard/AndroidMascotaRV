@@ -1,13 +1,14 @@
 package com.example.iamed.mascotarv;
 
 public class Mascotas {
-    String nombre;
-    int rate;
+    private String nombre;
+    private String rate;
     private int foto;
 
-    public Mascotas(String nombre, int rate) {
+    public Mascotas(int foto, String nombre, String rate) {
             this.nombre=nombre;
             this.rate=rate;
+            this.foto=foto;
     }
 
     public String getNombre() {
@@ -18,11 +19,11 @@ public class Mascotas {
         this.nombre = nombre;
     }
 
-    public int getRate() {
+    public String getRate() {
         return rate;
     }
 
-    public void setRate(int rate) {
+    public void setRate(String rate) {
         this.rate = rate;
     }
 
