@@ -16,17 +16,17 @@ public class DetalleMascota extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detalle_mascota);
 
-        Bundle parametros=getIntent().getExtras();
+        //Bundle parametros=getIntent().getExtras();
         //int foto = parametros.getInt(getResources().getInteger(R.drawable.perro01));
-        String nombre=parametros.getString(getResources().getString(R.string.nombre));
-        String rating=parametros.getString(getResources().getString(R.string.rating));
+        //String nombre=parametros.getString(getResources().getString(R.string.nombre));
+        //String rating=parametros.getString(getResources().getString(R.string.rating));
 
         //Extraer desde layout activity_detalle_mascota.xml..(mostrar 5 mascotas)
-        tvNombre=(TextView) findViewById(R.id.tvNombreRV);
-        tvRate=(TextView) findViewById(R.id.tvRating);
+        //tvNombre=(TextView) findViewById(R.id.tvNombreRV);
+        //tvRate=(TextView) findViewById(R.id.tvRating);
 
-        tvNombre.setText(nombre);
-        tvRate.setText(rating);
+        //tvNombre.setText(nombre);
+        //tvRate.setText(rating);
 
     }
 }
