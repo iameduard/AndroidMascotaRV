@@ -7,10 +7,10 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!--<include
-        android:id="@+id/miActionBar"
-        />
-     -->
+    <include android:id="@+id/miActionBar"
+        layout="@layout/actionbar"
+        >
+    </include>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rvMascota"

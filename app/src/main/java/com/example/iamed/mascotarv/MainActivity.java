@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 
 import java.util.ArrayList;
 
@@ -20,6 +21,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(layout.activity_main);
 
         ListaMascotas = (RecyclerView) findViewById(id.rvMascota);
+
+        Toolbar miActionBar = (Toolbar) findViewById(id.miActionBar);
+        //La siguiente instruccion genera que no se muestre al app
+        //setSupportActionBar(miActionBar);
 
         LinearLayoutManager llm = new LinearLayoutManager(this);
         llm.setOrientation(LinearLayoutManager.VERTICAL);

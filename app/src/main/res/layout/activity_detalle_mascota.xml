@@ -6,6 +6,11 @@
     android:orientation="vertical"
     tools:context=".DetalleMascota">
 
+    <include android:id="@+id/miActionBar"
+        layout="@layout/actionbar"
+        >
+    </include>
+
     <ImageView
         android:id="@+id/imFoto1"
         android:layout_width="match_parent"

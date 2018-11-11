@@ -7,6 +7,8 @@
     <dimen name="activity_horizontal_margin">5dp</dimen>
     <dimen name="corner_radius_cardview">4dp</dimen>
     <dimen name="font">20dp</dimen>
+    <dimen name="titulo">30dp</dimen>
     <dimen name="margen">40dp</dimen>
+    <dimen name="margen2">20dp</dimen>
     <dimen name="elevacion_actionbar">4dp</dimen>
 </resources>
