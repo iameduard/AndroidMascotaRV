@@ -1,10 +1,13 @@
 package com.example.iamed.mascotarv;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.widget.Button;
+import android.view.View;
 
 import java.util.ArrayList;
 
@@ -26,6 +29,11 @@ public class MainActivity extends AppCompatActivity {
         //La siguiente instruccion genera que no se muestre al app
         //setSupportActionBar(miActionBar);
 
+        //Crear el Intent que sera llamado al hacer click en la estrella..
+        Intent intent = getIntent();
+        Bundle extras = intent.getExtras();
+        agregarBotonEstrella();
+
         LinearLayoutManager llm = new LinearLayoutManager(this);
         llm.setOrientation(LinearLayoutManager.VERTICAL);
         ListaMascotas.setLayoutManager(llm);
@@ -33,6 +41,22 @@ public class MainActivity extends AppCompatActivity {
         iniciarListaMascotas();
         inicializarAdaptador();
 
+    }
+
+    private void agregarBotonEstrella() {
+        Button btn_estrella=(Button) findViewById(id.btn_estrella);
+        btn_estrella.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Intent intent=new Intent(MainActivity.this,DetalleMascota.class);
+                //startActivities(intent);
+
+                Intent intent = new Intent(getApplicationContext(), DetalleMascota.class);
+                startActivity(intent);
+                finish();
+            }
+
+        });
     }
 
     private void inicializarAdaptador() {
