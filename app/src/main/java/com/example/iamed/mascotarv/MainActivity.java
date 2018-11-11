@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         LinearLayoutManager llm = new LinearLayoutManager(this);
         llm.setOrientation(LinearLayoutManager.VERTICAL);
         ListaMascotas.setLayoutManager(llm);
+
         iniciarListaMascotas();
         inicializarAdaptador();
 
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void inicializarAdaptador() {
         MascotaAdaptador adaptador=new MascotaAdaptador(mascotas);
+        ListaMascotas.setAdapter(adaptador);
 
     }
 
