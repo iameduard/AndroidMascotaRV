@@ -22,7 +22,8 @@
             android:layout_height="wrap_content"
             android:src="@drawable/perro06"
             android:contentDescription="TODO"
-            android:layout_marginTop="@dimen/margen"/>
+            android:layout_marginTop="@dimen/margen"
+            />
 
         <LinearLayout
             android:layout_width="match_parent"
