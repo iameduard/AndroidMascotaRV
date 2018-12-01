@@ -11,47 +11,9 @@
         >
     </include>
 
-    <ImageView
-        android:id="@+id/imFoto1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/perro01"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/nombre"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/rating"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvFavoritas"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
 
-    <ImageView
-        android:id="@+id/imFoto2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/perro02"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/nombre"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/rating"/>
-
-    <ImageView
-        android:id="@+id/imFoto3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/perro03"/>
-    <ImageView
-        android:id="@+id/imFoto4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/perro04"/>
-    <ImageView
-        android:id="@+id/imFoto5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/perro05"/>
 </LinearLayout>
