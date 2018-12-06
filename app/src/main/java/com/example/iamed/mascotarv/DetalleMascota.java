@@ -64,7 +64,7 @@ public class DetalleMascota extends AppCompatActivity {
         //
         //Verificar si hace falta pasar el rating OJOOOOO!!!!!
         //
-        mascotas.add(new Mascotas(R.drawable.perro01,"Catty","4"));
+        //mascotas.add(new Mascotas(R.drawable.perro01,"Catty","4"));
         mascotas.add(new Mascotas(R.drawable.perro02,"Ronny","5"));
         mascotas.add(new Mascotas(R.drawable.perro03,"gufy","4"));
         mascotas.add(new Mascotas(R.drawable.perro04,"plutoo","3"));
