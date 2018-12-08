@@ -16,8 +16,8 @@
      android:layout_marginRight="@dimen/margen2">
      <Button
          android:id="@+id/btn_huella"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
+         android:layout_width="40dp"
+         android:layout_height="40dp"
          android:layout_gravity="center_vertical"
          android:background="@drawable/icons8_cat_footprint_48__blanco02"/>
 
@@ -41,8 +41,9 @@
 
      <Button
          android:id="@+id/btn_estrella"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
+         android:layout_width="40dp"
+         android:layout_height="40dp"
+         android:layout_gravity="center_vertical"
          android:background="@drawable/icons8_hotel_48_blanco"/>
 
      <!--<ImageView
